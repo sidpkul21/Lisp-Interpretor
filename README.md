@@ -33,7 +33,3 @@ gcc -std=c99 -Wall -g lispy.c mpc.c -o lisp
 # Example Run
 lispy> (* 2 (- 5 3))
 4
-
----
-
-
