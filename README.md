@@ -1,24 +1,39 @@
-# Lisp-Interpretor
-This is a minimal Lisp interpreter built from scratch in C as part of a self-guided learning project, following the book Build Your Own Lisp by Daniel Holden.
-The project includes a fully working REPL (Read-Eval-Print Loop) that can parse and evaluate simple Lisp expressions using a hand-written parser and evaluation engine.
+# Lisp Interpreter in C
+This is a minimal Lisp interpreter built from scratch in C as part of a self-guided learning project, following the book [*Build Your Own Lisp*](https://www.buildyourownlisp.com/) by Daniel Holden.
+The project provides a fully working REPL (Read-Eval-Print Loop) that parses and evaluates simple Lisp expressions with a hand-written parser and evaluation engine.
 
-🚀 Features
-Interactive Lisp REPL
-Custom syntax inspired by traditional Lisp (prefix notation)
+---
 
-📁 Project Structure
-lispy.c – Core REPL and interpreter logic
-mpc.c and mpc.h – Parser combinator library
+## Features
 
-🛠️ Build & Run
-To compile the interpreter, run:
+- Interactive Lisp REPL  
+- Prefix-notation syntax familiar to traditional Lisps  
 
-bash:
-gcc -std=c99 -Wall -g main.c mpc.c -o lisp
+---
+
+## Project Structure
+
+| File / Folder | Purpose                                   |
+| ------------- | ----------------------------------------- |
+| `lispy.c`     | Core REPL and interpreter logic           |
+| `mpc.c`       | Parser combinator library (`mpc`)         |
+| `mpc.h`       | Header for the parser combinator library  |
+
+---
+
+## Build & Run
+
+```bash
+# Compile
+gcc -std=c99 -Wall -g lispy.c mpc.c -o lisp
+
+# Launch the REPL
 ./lisp
 
-Once running:
-lispy> (+ 1 2 3)
-6
+# Example Run
 lispy> (* 2 (- 5 3))
 4
+
+---
+
+
